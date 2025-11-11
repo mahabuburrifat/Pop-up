@@ -2,25 +2,32 @@ body {
     background-color: #DECDAC;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.popup-open-btn-container {
+    padding: 50px;
+}
 .popup-open-btn {
-    background-color: #EBBF53;
+    background-color: #ebc053c4;
     color:#492118;
     padding: 16px 28px;
     font-size: 24px;
     font-weight: 600;
     cursor: pointer;
     border: none;
-    box-shadow: 2px 2px 15px 0 #492118ce ;
+    box-shadow: 2px 2px 15px 0 #492118ce;   
+}
+.popup-open-btn:hover {
+    background-color: #EBBF53;
+    transition: all 0.5s ease-in-out;
 }
 .popup-container {
     position: fixed;
     inset: 0;
-    pointer-events: none;  
+    pointer-events: none; 
 }
 .popup-container.popup-open {
     pointer-events: all;
     background-color: rgba(0, 0, 0, 0.6);
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
 }
 .popup {
     background-color: #fff;
@@ -33,7 +40,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 } 
 
 .popup-close-btn {
@@ -42,6 +49,15 @@ body {
     font-weight: 700;
     right: 24px;
     cursor: pointer;
+    background-color:#ebc053c4;
+    color: #492118;
+    padding: 4px 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 #492118ce;
+}
+.popup-close-btn:hover {
+    background-color: #EBBF53;
+    transition: all 0.5s ease-in-out;
 }
 
 .popup-container.popup-open .popup {
