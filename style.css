@@ -2,7 +2,16 @@ body {
     background-color: #DECDAC;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.popup-open-btn {
+    background-color: #EBBF53;
+    color:#492118;
+    padding: 16px 28px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 15px 0 #492118ce ;
+}
 .popup-container {
     position: fixed;
     inset: 0;
@@ -23,7 +32,7 @@ body {
     box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.6);
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(0);
     transition: all 0.3s ease-in-out;
 } 
 
